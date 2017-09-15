@@ -11,6 +11,16 @@
 <form action="loginServlet" method="post">
 	UserName: <input type="text" name="username"/>
 	PassWord: <input type="text" name="password"/>
+	
+	<br/><br/>
+	Hobby:
+	<input type="checkbox" name="hobby" value="阅读"/>阅读
+	<input type="checkbox" name="hobby" value="游戏"/>游戏
+	<input type="checkbox" name="hobby" value="爬山"/>爬山
+	<input type="checkbox" name="hobby" value="旅游"/>旅游
+	<input type="checkbox" name="hobby" value="游泳"/>游泳
+	
+	<br/><br/>
 	<input type="submit" value="登录"/>
 </form>
 </body>

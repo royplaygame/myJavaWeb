@@ -46,4 +46,22 @@
 		<param-name>jdbcUrl</param-name>
 		<param-value>jdbc:mysql:///test</param-value>
 	</context-param>
+
+	<context-param>
+		<param-name>userName</param-name>
+		<param-value>zhangsan</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>123456</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.hy.ly.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
