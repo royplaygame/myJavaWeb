@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page isErrorPage="true" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		String str=exception.getMessage();
-		//System.out.println(str);
-	%>
+
+<a href="forwardServlet">forwardServlet</a>
+<br/><br/>
+<a href="redirectServlet">redirectServlet</a>
 </body>
 </html>

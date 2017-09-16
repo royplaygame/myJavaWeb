@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>Hello Jsp</h1>
 	<% Date date=new Date(); %>
 	
 	<!-- jsp表达式  -->
