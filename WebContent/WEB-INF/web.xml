@@ -64,4 +64,19 @@
 		<servlet-name>loginServlet</servlet-name>
 		<url-pattern>/loginServlet</url-pattern>
 	</servlet-mapping>
+
+
+	<!-- 映射jsp方法 -->
+	<servlet>
+		<servlet-name>mainJsp</servlet-name>
+		<jsp-file>/main.jsp</jsp-file>
+		<init-param>
+			<param-name>myPara</param-name>
+			<param-value>刘备</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainJsp</servlet-name>
+		<url-pattern>/mainjsp</url-pattern>
+	</servlet-mapping>
 </web-app>
