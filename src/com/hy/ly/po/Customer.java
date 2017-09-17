@@ -39,6 +39,7 @@ public class Customer {
 	}
 	public Customer() {
 		super();
+		System.out.println("Customer's Constructor.......");
 	}
 	@Override
 	public String toString() {
