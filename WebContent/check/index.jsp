@@ -11,7 +11,8 @@
 		
 	<center>
 		<h4>请输入如下信息</h4>
-		<%=session.getAttribute("message")==null?"":session.getAttribute("message")%>
+		<font color="red"><%=session.getAttribute("message")==null?"":session.getAttribute("message")%></font>
+		<br/><br/>
 		<form action="<%=request.getContextPath() %>/checkCodeServlet" method="post">
 			
 			<table border="1" cellpadding="10" cellspacing="0">
@@ -27,7 +28,7 @@
 					<td>验证码：</td>
 					<td><input type="text" name="CHECK_CODE_KEY" /><img alt="" src="<%=request.getContextPath() %>/validateColorServlet"></td>
 				</tr>
-				<tr>
+				<tr align="center">
 					<td colspan="2"><input type="submit" value="提交" /></td>
 				</tr>
 			</table>
