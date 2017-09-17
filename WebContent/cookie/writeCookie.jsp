@@ -11,7 +11,7 @@
 	<%
 		Cookie cookie = new Cookie("cookiePath", "myNewCookieValue");
 		//设置Cookie的作用范围
-		cookie.setPath(request.getContextPath());
+		//cookie.setPath(request.getContextPath());
 		response.addCookie(cookie);
 		
 		//Cookie的作用范围：
