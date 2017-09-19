@@ -52,6 +52,21 @@
 		<param-name>charEncode</param-name>
 		<param-value>UTF-8</param-value>
 	</context-param>
+	<!-- 用户信息放入到Session中的键的名称 -->
+	<context-param>
+		<param-name>userSessionKey</param-name>
+		<param-value>USERSESSIONKEY</param-value>
+	</context-param>
+	<!-- 若未登录，重定向的页面地址信息 -->
+	<context-param>
+		<param-name>redirectPath</param-name>
+		<param-value>/filter/verify/login.jsp</param-value>
+	</context-param>
+	<!-- 不需要检查，或拦截的url列表 -->
+	<context-param>
+		<param-name>uncheckedUrls</param-name>
+		<param-value>/filter/verify/login.jsp,/filter/verify/list.jsp,/filter/verify/doLogin.jsp,/filter/verify/a.jsp</param-value>
+	</context-param>
 	<servlet>
 		<servlet-name>loginServlet</servlet-name>
 		<servlet-class>com.hy.ly.servlet.LoginServlet</servlet-class>
