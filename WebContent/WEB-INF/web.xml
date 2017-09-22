@@ -126,4 +126,9 @@
 		<dispatcher>REQUEST</dispatcher>  <!-- 默认是request方式、可以配置多种方式 -->
 		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
+
+	<!-- 配置Listener监听器 -->
+	<listener>
+		<listener-class>com.hy.ly.listener.HelloServletContextListener</listener-class>
+	</listener>
 </web-app>

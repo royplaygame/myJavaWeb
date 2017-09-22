@@ -16,6 +16,14 @@ public class TestServlet extends HttpServlet {
 		System.out.println("testServlet's doGet");
 		
 		System.out.println(request.getAttribute("name"));
+		
+		request.setAttribute("requestKey", "mytestServlet");
+		
+		//请求转发，一个请求
+		request.getRequestDispatcher("/testPage.jsp").forward(request, response);
+		
+		//请求重定向：两个请求
+		//response.sendRedirect(request.getContextPath()+"/testPage.jsp");
 	}
 
 }

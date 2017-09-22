@@ -41,7 +41,7 @@ public class LoginFilter extends HttpFilter {
 
 		// System.out.println(requestURL);
 		// System.out.println(requestURI);
-		System.out.println(servletPath);
+		//System.out.println(servletPath);
 
 		// 2. 检查1获取的servletPath是否为不需要拦截的url, 若是，直接放行，方法结束
 		List<String> urls=Arrays.asList(uncheckedUrls.split(","));

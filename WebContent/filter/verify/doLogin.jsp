@@ -15,7 +15,6 @@
 		if(username!=null&&!username.trim().equals("")){
 			session.setAttribute(application.getInitParameter("userSessionKey"), username);
 			//3. 重定向到list.jsp中
-			System.out.println(request.getContextPath()+"/filter/verify/list.jsp"+">>>>>>>>>>>>>>>>>>>>>>>>>>");
 			response.sendRedirect(request.getContextPath()+"/filter/verify/list.jsp");
 		}else{
 			response.sendRedirect(request.getContextPath()+"/filter/verify/login.jsp");
