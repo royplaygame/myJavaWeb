@@ -131,4 +131,7 @@
 	<listener>
 		<listener-class>com.hy.ly.listener.HelloServletContextListener</listener-class>
 	</listener>
+	<listener>
+		<listener-class>com.hy.ly.listener.TestAttributeListener</listener-class>
+	</listener>
 </web-app>
