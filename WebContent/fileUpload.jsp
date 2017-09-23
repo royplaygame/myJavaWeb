@@ -7,8 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="upload.jsp">Upload File</a>
-	<br/><br/>
-	<a href="download.jsp">Download File</a>
+	<center>
+		<br /> <br /> <br /> <br /> <a href="upload.jsp">Upload File</a> <br />
+		<br /> <a href="${pageContext.request.contextPath }/app/upload.jsp">Upload
+			More Files</a> <br /> <br /> <a href="download.jsp">Download File</a>
+	</center>
+
 </body>
 </html>

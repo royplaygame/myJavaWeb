@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import com.hy.ly.exception.InvalidExtNameException;
@@ -33,7 +34,7 @@ public class FileUploadServlet extends HttpServlet {
 	
 	private static final String FILE_PATH = "/WEB-INF/files/";
 	
-	private static final String TEMP_DIR = "d:\\tmp";
+	private static final String TEMP_DIR = "//";
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

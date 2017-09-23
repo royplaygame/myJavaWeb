@@ -8,5 +8,18 @@
 </head>
 <body>
 	<h4>File Download</h4>
+	<br/>
+	<br/>
+	<!-- 静态下载 -->
+	<a href="xyz.txt">Download xyz.txt</a>
+	
+	<br/>
+	<br/>
+	<!-- 动态下载 -->
+	<a href="test.jsp">Download test.txt</a>
+	<br/>
+	<br/>
+	<!-- 动态下载 -->
+	<a href="downloadServlet">Download myinfo.pptx</a>
 </body>
 </html>
